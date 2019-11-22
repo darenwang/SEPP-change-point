@@ -118,4 +118,4 @@ for ( rr in 1:50){
   
   
 }
-mean(dist/450)
+mean(dist/3*n)
