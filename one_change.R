@@ -31,7 +31,7 @@ A=cbind(v1,v2,AA)
 A2=cbind(v2,v1,AA)
 
 #50 experiments with
-for ( aa in 1:50){
+for ( aa in 1:100){
   print(aa)
 #when n is super large, it works fine
 
@@ -65,4 +65,5 @@ print(estimate.change[aa,bb])
 }
 
 }
+save.image(file="onechange.RData")
 colMeans(abs(estimate.change-300   )/600)
